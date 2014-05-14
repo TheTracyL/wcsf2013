@@ -1,0 +1,559 @@
+<!doctype html>
+<html lang="en">
+
+	<head>
+		<meta charset="utf-8">
+
+		<title>What You Don't Know You Can Do - WordPress Development for Absolutely Everyone!</title>
+
+		<meta name="description" content="WordCamp San Francisco 2013 Presentation by Tracy Levesque. Using Reveal.js - a framework for easily creating beautiful presentations using HTML">
+
+		<meta name="apple-mobile-web-app-capable" content="yes" />
+		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<link rel="stylesheet" href="css/reveal.css">
+		<link rel="stylesheet" href="css/theme/sky.css" id="theme">
+
+		<!-- For syntax highlighting -->
+		<link rel="stylesheet" href="lib/css/zenburn.css">
+
+		<!-- If the query includes 'print-pdf', use the PDF print sheet -->
+		<script>
+			document.write( '<link rel="stylesheet" href="css/print/' + ( window.location.search.match( /print-pdf/gi ) ? 'pdf' : 'paper' ) + '.css" type="text/css" media="print">' );
+		</script>
+
+		<!--[if lt IE 9]>
+		<script src="lib/js/html5shiv.js"></script>
+		<![endif]-->
+	</head>
+
+	<body>
+
+		<div class="reveal">
+
+			<!-- Any section element inside of this container is displayed as a slide -->
+			<div class="slides">
+				<section>
+					<h4>What You Don't Know You Can Do</h4>
+					<h2>WordPress Development for Absolutely Everyone</h2>
+					<p>
+						<small>With Tracy Levesque / <a href="http://twitter.com/liljimmi">@liljimmi</a></small>
+					</p>
+				</section>
+
+				<section>
+					<h3>Hi, I'm Tracy.</h3>
+					<p>
+						<img src="img/hi.jpg" />
+					</p>
+				</section>
+
+				<section>
+					<h4>Power User</h4>
+					<p>
+						<img src="img/poweruser.png" />
+					</p>
+					
+				</section>
+
+				<section>
+					<h3>HTML</h3>
+					<p>
+						<img src="img/html.png" />
+					</p>
+				</section>
+
+				<section>
+					<h3>CSS</h3>
+					<p>
+						<img src="img/css.png" />
+					</p>
+				</section>
+
+				<section>
+					<h3><strike>PHP</strike></h3>
+					<p>
+						<img src="img/php.png" />
+					</p>
+				</section>
+
+				<section>
+					<p>
+						<img src="img/skillz.png" />
+					</p>
+					
+					<h3>We can develop for WordPress, too!</h3>
+				</section>
+
+				<section>
+					<h2>WordPress Development</h2>
+					<h1>
+						Demystified!
+					</h1>
+				</section>
+
+				<section data-background="img/burst-background.png">
+					<h1>
+						The WordPress Template Hierarchy
+					</h1>
+				</section>
+
+				<section>
+					<h3>The WordPress Template Hierarchy</h3>
+					<h4><a href="http://codex.wordpress.org/Template_Hierarchy#The_General_Idea" target="_blank">codex.wordpress.org says:</a></h4>
+					<blockquote>
+						WordPress uses the Query String &mdash; information contained within each link on your web site &mdash; to decide which template or set of templates will be used to display the page.
+					</blockquote>
+				</section>
+
+				<section>
+					<h3>The WordPress Template Hierarchy</h3>
+					<h4>Translation</h4>
+					<p>
+						Name a template file a certain way and it will automatically apply to a certain page.
+					</p>
+				</section>
+
+				<section data-background="img/Template_Hierarchy.png">
+					<h1>OMG</h1>
+				</section>
+
+				<section>
+					<h3>The WordPress Template Hierarchy</h3>
+					<h4>What it is</h4>
+					
+					<p>
+						<img src="img/cat-archive.png" />
+					</p>
+				</section>
+
+				<section>
+					<h3>The WordPress Template Hierarchy</h3>
+					<h4>What it is</h4>
+					<p>
+						<img src="img/theme-flies.png" />
+					</p>
+				</section>
+
+				<section>
+					<h3>The WordPress Template Hierarchy</h3>
+					<h4>What it is</h4>
+					
+					<p>
+						<img src="img/frames.png" />
+					</p>
+				</section>
+
+				<section>
+					<h3>The WordPress Template Hierarchy</h3>
+					<h4>What it is</h4>
+					<ul>
+						<li>"Blog" page</li>
+						<li>Regular page</li>
+						<li>Archive pages</li>
+						<li>Single post</li>
+						<li>Search result</li>
+						<li>Etc...</li>
+					</ul>
+				</section>
+
+				<section>
+					<h3>The WordPress Template Hierarchy</h3>
+					<h4>What it can do</h4>
+					<p>
+						<img src="img/cat-templates.png" />
+					</p>
+				</section>
+
+				<section>
+					<h3>The WordPress Template Hierarchy</h3>
+					<h4>Twentytwelve example</h4>
+					<p>
+						<a href="http://yikesdev.com/gdi4/" target="_blank"><img src="img/cat-example.png" /></a>
+					</p>
+				</section>
+
+				<section>
+					<h3>The WordPress Template Hierarchy</h3>
+					<h4>How you can use it</h4>
+					<p>
+						<strong>Power users</strong> - Look for themes or theme frameworks.
+					</p>
+					<p>
+						<strong>Designers</strong> - Make them yourself! 
+					</p>
+				</section>
+
+				<section data-background="img/burst-background.png">
+					<h1>
+						The Loop
+					</h1>
+				</section>
+
+				<section>
+					<h3>The Loop</h3>
+					<h4><a href="http://codex.wordpress.org/The_Loop" target="_blank">codex.wordpress.org says:</a></h4>
+					<blockquote>
+						The Loop is PHP code used by WordPress to display posts.
+					</blockquote>
+				</section>
+
+				<section>
+					<h3>The Loop</h3>
+					<h4>Translation</h4>
+					<p>
+						The Loop is a set of instructions in a template that grabs content and displays it on a page.
+					</p>
+				</section>
+
+				<section>
+					<h3>The Loop</h3>
+					<h4>What it is</h4>
+					
+					<p>
+						<img src="img/sandwiches.png" /> <img src="img/sandwiches.png" />
+					</p>
+				</section>
+
+				<section>
+					<h3>The Loop</h3>
+					<h4>What it is</h4>
+					
+					<p>
+						<img src="img/sandwich.png" /> 
+					</p>
+				</section>
+
+				<section>
+					<h3>The Loop</h3>
+					<h4>What it is</h4>
+					
+					<p>
+						<img src="img/sandwiches.png" /> 
+					</p>
+				</section>
+
+				<section>
+					<h3>The Loop</h3>
+					<h4>What it is</h4>
+					<p>
+						Main components
+						
+						<ul>
+							<li>Title</li>
+							<li>Content</li>
+						</ul>
+					</p>
+				</section>
+
+				<section>
+					<h3>The Loop</h3>
+					<h4>What it is</h4>
+					<p>
+						Additional content, aka <strong>Metadata</strong>.
+						
+						<ul>
+							<li>Author</li>
+							<li>Date</li>
+							<li>Featured Image</li>
+							<li>Categories (posts only)</li>
+							<li>Tags (posts only)</li>
+							<li>Etc.</li>
+						</ul>
+					</p>
+				</section>
+
+				<section>
+					<h3>The Loop</h3>
+					<h4>What it is</h4>
+					<p>
+						Instructions
+					</p>
+						
+						<ul>
+							<li>Only show posts from the "Pets" category</li>
+							<li>If a post is tagged "kittens" add a special style to it</li>
+							<li>If a post is tagged "dogs" don't show it</li>
+						</ul>
+					</p>
+				</section>
+
+				<section>
+					<h3>The Loop</h3>
+					<h4>What it can do</h4>
+					<p>
+						<a href="http://moviefanfare.com" target="_blank">moviefanfare.com</a> example. 
+					</p>
+					
+					<p>
+						<a href="http://www.moviefanfare.com/articles/" target="_blank"><img src="img/movies.png" /></a>
+					</p>
+				</section>
+
+				<section>
+					<h3>The Loop</h3>
+					<h4>How you can use it</h4>
+					<p>
+						<strong>Power users</strong> - Look for themes or theme frameworks.
+					</p>
+					<p>
+						<strong>Designers</strong> - Do it yourself! Check out <a href="http://codex.wordpress.org/The_Loop_in_Action" target="_blank">The Loop in Action</a>.
+					</p>
+				</section>
+
+				<section data-background="img/burst-background.png">
+					<h1>
+						Custom Post Types
+					</h1>
+				</section>
+
+				<section>
+					<h3>Custom Post Types</h3>
+					<h4><a href="http://codex.wordpress.org/Post_Types#Custom_Post_Types" target="_blank">codex.wordpress.org says:</a></h4>
+					<blockquote>
+						A Custom Type is a Post Type you define.
+					</blockquote>
+				</section>
+
+				<section>
+					<h3>Custom Post Types</h3>
+					<h4>Translation</h4>
+					<p>
+						More than the usual <strong>Pages</strong> and <strong>Posts</strong>.
+					</p>
+				</section>
+
+				<section>
+					<h3>Custom Post Types</h3>
+					<h4>What they are</h4>
+					<p>	
+						Pages and Posts are both <strong>Post Types</strong>						
+					</p>
+					<ul>
+						<li>Content with sets of fields</li>
+						<li>Own admin area</li>
+						<li>Consistent input</li>
+						<li>Consistent output</li>
+					</ul>
+				</section>
+
+				<section>
+					<h3>Custom Post Types</h3>
+					<h4>What they are</h4>
+					<p>	
+						<img src="img/pages-posts.png" /><br />						
+
+						<img src="img/staff.png" class="fragment roll-in" />
+						<img src="img/recipes.png" class="fragment roll-in" />
+						<img src="img/products.png" class="fragment roll-in" />	
+						<img src="img/jobs.png" class="fragment roll-in" />	
+						<img src="img/contacts.png" class="fragment roll-in" />	
+						<img src="img/case.png" class="fragment roll-in" />	
+						<img src="img/press.png" class="fragment roll-in" />	
+					</p>
+				</section>
+
+				<section>
+					<h3>Custom Post Types</h3>
+					<h4>What they can do</h4>
+					<p>
+						<strong>Custom Taxonomies</strong>
+					</p>
+					<p>
+						<img src="img/cat-tag.png" />
+					</p>
+				</section>
+
+				<section>
+					<h3>Custom Post Types</h3>
+					<h4>What they can do</h4>
+					<p>
+						Custom Post Type:<br /> <img src="img/movies2.png" />
+					</p>
+					
+					<p>
+						Custom Taxonomies: <strong>Genre</strong>, 
+						<strong>Year</strong>, 
+						<strong>Director</strong> and
+						<strong>Rating</strong>
+					<p>
+				</section>
+
+				<section>
+					<h3>Custom Post Types</h3>
+					<h4>Static Guard example</h4>
+					<p>
+						3 custom post types: <strong>Products</strong>, <strong>Stylists</strong> and <strong>Tips</strong>
+					</p>
+					
+					<p>
+						<a href="http://www.mystaticguard.com/" target="_blank"><img src="img/static1.jpg" /></a>
+					<p>
+				</section>
+
+				<section>
+					<h3>Custom Post Types</h3>
+					<h4>How you can use them</h4>
+					<p>
+						<strong>Power users</strong> - <a href="http://wordpress.org/plugins/custom-post-type-ui/" target="_blank">Use a plugin</a>.
+					</p>
+					<p>
+						<strong>Designers</strong> - Code your own. <a href="http://wordpress.tv/2013/04/12/tracy-levesque-custom-post-types-for-right-brained-folks/" target="_blank">Custom Post Types for Designers</a>
+					</p>
+				</section>
+
+				<section data-background="img/burst-background.png">
+					<h1>
+						Hooks, Actions and Filters
+					</h1>
+				</section>
+
+
+				<section>
+					<h3>Hooks, Actions and Filters</h3>
+					<h4><a href="http://codex.wordpress.org/Plugin_API#Hooks.2C_Actions_and_Filters" target="_blank">codex.wordpress.org says:</a></h4>
+					<blockquote>
+						Hooks are provided by WordPress to allow your plugin to 'hook into' the rest of WordPress...There are two kinds of hooks: 
+						<ul>
+							<li>Actions: A custom PHP function defined in your plugin (or theme) and hooked, i.e. set to respond, to specific events that take place in WordPress. </li>
+							<li>Filters: Functions that WordPress passes data through, at certain points in execution, just before taking some action with the data </li>
+						</ul>						
+					</blockquote>
+				</section>
+				
+				<section>
+					<h3>Hooks, Actions and Filters</h3>
+					<h4>Translation</h4>
+					<p>
+						Hooks, Actions and Filters allow you to change WordPress functionality without breaking it.
+					</p>
+				</section>
+
+				<section>
+					<h3>Custom Post Types</h3>
+					<h4>What they are</h4>
+					<p>	
+						<strong>Hooks</strong> - Points at which WordPress allows you to tap into a function and safely modify it.	
+					</p>
+					
+					<ul>
+						<li>Excerpts</li>
+						<li>Admin menus</li>
+						<li>Post content</li>
+						<li>Custom Post Types</li>
+						<li>Sidebars</li>
+					</ul>
+				</section>
+
+				<section>
+					<h3>Hooks, Actions and Filters</h3>
+					<h4>What they are</h4>
+					<p>	
+						<strong>Actions</strong> - A hook that makes something new happen when a WordPress function is triggered.
+					</p>
+				</section>
+				
+				<section>
+					<h3>Hooks, Actions and Filters</h3>
+					<h4>What they are</h4>
+					<p>	
+						<strong>Filters</strong> - A hook that modifies a WordPress function when it is triggered.
+					</p>
+				</section>
+
+				<section>
+					<h3>Hooks, Actions and Filters</h3>
+					<h4>What they are</h4>
+					<p>
+						Demo time!
+					</p>
+				</section>
+
+				<section>
+					<h3>Hooks, Actions and Filters</h3>
+					<h3>What they can do</h3>
+					<p>
+						Make WordPress great! 
+					</p>
+				</section>
+
+				<section>
+					<h3>Hooks, Actions and Filters</h3>
+					<h4>How you can use them</h4>
+					<p>
+						<strong>Power users</strong> - Use plugins
+					</p>
+					<p>
+						<strong>Designers</strong> - Add functionality! <a href="http://codex.wordpress.org/Theme_Development#Theme_Functions_File" target="_blank">WordPress Codex on Theme Development</a>.
+					</p>
+				</section>
+
+				<section>
+					<h3>Resources</h3>
+					
+					<ul>
+						<li><strong><a href="http://codex.wordpress.org/" target="_blank">The WordPress Codex</a></strong></li>
+						<li><strong><a href="http://codex.wordpress.org/WordPress_Semantics#Terminology_Related_to_Design" target="_blank">WordPress Terminology Related to Design</a></strong></li>
+						<li><strong><a href="http://www.weareo3.com/wordpress-custom-post-type-generator/" target="_blank">WordPress Custom Post Type Generator</a></strong></li>
+						<li><strong><a href="https://managewp.com/wordpress-frameworks" target="_blank">Guide to WordPress Theme Frameworks</a></strong></li>
+					</ul>
+				</section>
+				
+				<section>
+					<h1>THE END</h1>
+					<h3>Questions?</h3>
+					
+					<p>Slides available on Slideshare: <a href="http://slideshare.net/TheTracyL" target="_blank">slideshare.net/TheTracyL</a></p>
+				</section>
+
+			</div>
+			
+			
+			
+			<footer>
+				<div class="copyright">
+					<a href="http://yikesinc.com" target="_blank"><img src="img/logo.png" class="footer-logo" /></a> 
+					What You Don't Know You Can Do &mdash; WordPress Development for Absolutely Everyone<br />
+					Tracy Levesque &nbsp; &#8226; &nbsp; 
+					<a href="http://twitter.com/liljimmi" target="_blank">@LilJimmi</a> &nbsp; &#8226; &nbsp; 
+					<a href="mailto:tracy@yikesinc.com" target="_blank">tracy@yikesinc.com</a> 
+				</div>
+			</footer>
+
+		</div>
+
+		<script src="lib/js/head.min.js"></script>
+		<script src="js/reveal.min.js"></script>
+
+		<script>
+
+			// Full list of configuration options available here:
+			// https://github.com/hakimel/reveal.js#configuration
+			Reveal.initialize({
+				controls: true,
+				progress: true,
+				history: true,
+				center: true,
+
+				theme: Reveal.getQueryHash().theme, // available themes are in /css/theme
+				transition: Reveal.getQueryHash().transition || 'default', // default/cube/page/concave/zoom/linear/fade/none
+
+				// Optional libraries used to extend on reveal.js
+				dependencies: [
+					{ src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
+					{ src: 'plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+					{ src: 'plugin/zoom-js/zoom.js', async: true, condition: function() { return !!document.body.classList; } },
+					{ src: 'plugin/notes/notes.js', async: true, condition: function() { return !!document.body.classList; } }
+					// { src: 'plugin/search/search.js', async: true, condition: function() { return !!document.body.classList; } }
+					// { src: 'plugin/remotes/remotes.js', async: true, condition: function() { return !!document.body.classList; } }
+				]
+			});
+
+		</script>
+
+	</body>
+</html>
